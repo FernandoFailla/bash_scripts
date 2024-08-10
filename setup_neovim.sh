@@ -86,3 +86,4 @@ bash miniconda.sh -b -p $HOME/miniconda
 source $HOME/miniconda/bin/activate
 conda init
 conda update -y conda
+conda config --add channels conda-forge

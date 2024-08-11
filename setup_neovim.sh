@@ -31,7 +31,8 @@ sudo apt-get update && sudo apt-get install -y \
     unzip \ 
     tmux \ 
     libmagickwand-dev \
-    firefox-esr
+    firefox-esr \ 
+    zsh
 
 sudo apt-get clean
 sudo rm -rf /var/lib/apt/lists/*
@@ -80,10 +81,9 @@ curl -L https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.3/quarto
 sudo dpkg -i quarto.deb
 rm quarto.deb
 
-# Instalação do Miniconda
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-bash miniconda.sh -b -p $HOME/miniconda
-source $HOME/miniconda/bin/activate
-conda init
-conda update -y conda
-conda config --add channels conda-forge
+## Oh my zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+### Caso queira instalar i3 junto a uma instalacao minima
+## To do , fazer interatividade com terminal
+
+sudo apt install i3-gaps i3blocks lightdm x11-server-utils pulseaudio nm-tray
+sudo apt install curl git gnupg feh vim
+sudo apt install firefox-esr xfe xfe-themes
+
 sudo apt update
 
 sudo bash -c 'echo "deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware" > /etc/apt/sources.list'

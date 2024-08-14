@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt update
+
 sudo bash -c 'echo "deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware" > /etc/apt/sources.list'
 sudo bash -c 'echo "deb-src http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware" >> /etc/apt/sources.list'
 sudo bash -c 'echo "deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware" >> /etc/apt/sources.list'
@@ -14,6 +16,8 @@ sudo apt-get --no-install-recommends install xserver-xorg xserver-xorg-video-fbd
 xinit pciutils xinput xfonts-100dpi xfonts-75dpi xfonts-scalable libx11-dev libxft-dev libxinerama-dev xorg-dev -y
 # install other common utils
 sudo apt-get install build-essential curl make neofetch stow -y
+
+sudo apt update
 
 # Atualiza e instala dependências
 sudo apt-get update && sudo apt-get install -y \

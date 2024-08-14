@@ -54,7 +54,7 @@ git clone https://github.com/neovim/neovim.git \
     && rm -rf neovim
 
 # Baixa dot file de configuração do nvim
-git clone https://github.com/jmbuhr/quarto-nvim-kickstarter.git ~/.config/nvim
+git clone https://github.com/FernandoFailla/nvim_ds.git ~/.config/nvim
 
 # Baixa e instala pacotes para R
 sudo Rscript -e 'install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))'

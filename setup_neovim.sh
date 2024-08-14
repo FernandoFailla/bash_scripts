@@ -3,7 +3,7 @@
 ### Caso queira instalar i3 junto a uma instalacao minima
 ## To do , fazer interatividade com terminal
 
-sudo apt install i3-gaps i3blocks lightdm x11-server-utils pulseaudio nm-tray
+sudo apt install i3 i3blocks lightdm x11-server-utils pulseaudio nm-tray
 sudo apt install curl git gnupg feh vim
 sudo apt install firefox-esr xfe xfe-themes
 

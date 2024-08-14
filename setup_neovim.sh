@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# assumes no desktop environment -- must install Xorg things
+sudo apt-get --no-install-recommends install xserver-xorg xserver-xorg-video-fbdev \
+xinit pciutils xinput xfonts-100dpi xfonts-75dpi xfonts-scalable libx11-dev libxft-dev libxinerama-dev xorg-dev -y
+# install other common utils
+sudo apt-get install build-essential curl make neofetch stow -y
+
 # Atualiza e instala dependências
 sudo apt-get update && sudo apt-get install -y \
     sudo \

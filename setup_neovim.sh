@@ -47,11 +47,10 @@ sudo apt-get update && sudo apt-get install -y \
     nodejs \
     npm \
     pkg-config \
-    unzip \ 
-    tmux \ 
-    libmagickwand-dev \
-    firefox-esr \ 
-    zsh
+
+sudo apt update
+
+sudo apt install unzip tmux libmagickwand-dev firefox-esr zsh
 
 sudo apt-get clean
 sudo rm -rf /var/lib/apt/lists/*
